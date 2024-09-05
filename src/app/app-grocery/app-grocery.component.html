@@ -4,15 +4,18 @@
     <div class="row">
         <div class="col-xs-6 col-md-4">
             <div class="input group">
-                <input type="text" class="from-control" placeholder="enter grocery items" id="txtSearch"/>
+                <input type="text" class="form-control" placeholder="enter grocery items" id="txtSearch" [(ngModel)]="task"/>
                 <div class="input-group-btn">
-                    <button class="'btn btn-primary" type="button">
-                        <span calss="glyphicon glyphicon-ok"></span>
+                    <button class="btn btn-primary" type="button" (click)="onClick()">
+                        <span class="glyphicon glyphicon-ok"></span>
                     </button>
 
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- Add this span element to display the tasks array as JSON -->
+  <span>{{tasks | json}}</span>
+
 </div>
