@@ -1,10 +1,10 @@
 <div>
     <div class="container"> <!--The container class centers the content on the page-->
         <div class="row"><!-- row class ensures the content inside is aligned in rows-->
-           <div class="col-12">
-                <div class="col-xs-6 col-md-4 col-lg-4">
+           <div class="col-12 w-100">
+                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                         
-                    <h2>Grocery list manager</h2>
+                    <h2 id="title">Grocery list manager</h2>
                     <div class="input-group"> <!--  This section creates the input area where users can type their grocery items-->
                         <!--The <input> field is bound to a component property using [(ngModel)],
                          which binds the value in the input to the task variable in the component.-->
@@ -27,7 +27,7 @@
             <br/>
 
             <!--This section displays the list of tasks the user has added-->
-            <div class="col-xs-4 col-md-8 col-lg-8">   
+            <div class="col-xs-4 col-sm-8 col-md-8 col-lg-8">   
 
                 <!-- Add this span element to display the tasks array -->
                 <ul class="list-group w-100" > <!--The list is styled with Bootstrap's list-group class-->
