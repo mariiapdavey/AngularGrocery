@@ -12,8 +12,7 @@ tasks: {name:string}[] = []; // This is an array of objects where each object ha
 onClick(){ 
   //Method: When the user clicks the button, this method:
 //Adds a new task to the tasks array with the name of the task.
-//Clears the input field by resetting the task variable to an empty string ('')
   this.tasks.push({name: this.task});// Push the object
-  this.task = '';
+  this.task = '';//Clears the input field by resetting the task variable to an empty string ('')
 }
 }
